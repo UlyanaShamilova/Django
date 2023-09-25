@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'book/css/style.css' %}">
+    <title>Document</title>
+    {% block links %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a href="{% url 'main' %}"><h1>MegaLibrary</h1></a>
+        <a href="{% url 'book' %}">Books</a>
+        <a href="{% url 'author' %}">Authors</a>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <h1>It`s a footer</h1>
+    </footer>
+</body>
+</html>

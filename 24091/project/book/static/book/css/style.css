@@ -1,0 +1,27 @@
+h1{
+    color: orange;
+    font-size: 40px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(128, 199, 221);
+}
+main{
+    min-height: 900px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    min-width: 100%;
+}

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% block link %}
+
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        
+        <div class="main-page">
+            <a href=""><h1 id = "main-h1">Головна сторінка</h1></a>
+        </div>
+        <div class="leisure-page">
+
+        </div>
+        <div class="hobby">
+
+        </div>
+        <div class="education-page">
+
+        </div>
+        <div class="achievements-page">
+
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+</body>
+</html>
